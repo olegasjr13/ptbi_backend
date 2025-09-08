@@ -1,0 +1,2 @@
+# config/urls.py
+urlpatterns = []
