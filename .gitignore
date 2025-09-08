@@ -1,0 +1,66 @@
+# === Python/Django ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.local/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+ruff_cache/
+.cache/
+
+# DB local de dev (se usar SQLite em dev)
+db.sqlite3
+
+# Uploads e compilações
+media/
+staticfiles/        # coletados pelo collectstatic (não versionar)
+
+# Ambientes virtuais
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos de ambiente e segredos
+.env.*
+*.env
+!.env.example       # deixe um exemplo sem segredos
+
+# Dumps / backups de banco
+*.dump
+*.sql
+*.sql.gz
+*.psql
+dump/
+backups/
+
+# Build & packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Node (se houver)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# SO
+.DS_Store
+Thumbs.db
+
+# Docker (não versionar envs/artefatos transitórios)
+docker/*.env
